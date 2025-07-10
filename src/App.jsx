@@ -19,6 +19,7 @@ import Navbar from "./components/Layout/Navbar";
 import PostCard from "./components/Posts/PostCard";
 import { fetchPostsSuccess } from './store/slices/postsSlice';
 import Search from './pages/Search';
+import NotFound from './pages/NotFound';
 
 function App() {
   const location = useLocation();
@@ -65,6 +66,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   ) : (
     <div className="min-h-screen bg-[#fdfaf7] font-sans">
@@ -79,6 +81,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/search" element={<Search />} />
         {/* Add other routes as needed */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
