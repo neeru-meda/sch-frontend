@@ -1,0 +1,461 @@
+.pageContainer {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #fefbf7;
+  margin: 0;
+  padding: 0;
+}
+
+.leftPanel {
+  background: #4A2343;
+  width: 48vw;
+  min-width: 320px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', 'Poppins', Arial, sans-serif;
+}
+
+.leftContent {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 100vh;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 180px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto 0px auto;
+  image-rendering: auto;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.10));
+}
+
+.title {
+  font-size: 34px;
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+  margin-top: 0;
+  line-height: 1;
+  display: block;
+}
+
+.tagline {
+  font-size: 15px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #cccccc;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 48px;
+  font-weight: 500;
+}
+
+.loginSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.loginHeading {
+  font-size: 26px;
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+  margin-top: 0;
+  letter-spacing: -0.5px;
+}
+
+.loginSubtext {
+  font-size: 15px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #cfcfcf;
+  margin-bottom: 22px;
+  text-align: left;
+  width: 100%;
+  margin-top: 0;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.input {
+  width: 100%;
+  max-width: 350px;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 14px;
+  background: #fff;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #000;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+
+.passwordWrapper {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.showPasswordButton {
+  background: none;
+  border: none;
+  color: #4A2343;
+  font-size: 22px;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.forgotRow {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 26px;
+}
+
+.forgotLink {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  transition: text-decoration 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  opacity: 1;
+}
+
+.forgotLink:disabled {
+  background: none !important;
+  border: none !important;
+  color: #bbb !important;
+  opacity: 1 !important;
+  pointer-events: none;
+}
+
+.forgotLink:hover {
+  text-decoration: underline;
+}
+
+.loginBtn {
+  background: #a678d1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 28px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.loginBtn:hover {
+  background: #8d5bbf;
+}
+
+.signupRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #cfcfcf;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.signupLink {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 14px;
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  opacity: 1;
+}
+
+.signupLink:disabled {
+  background: none !important;
+  border: none !important;
+  color: #bbb !important;
+  opacity: 1 !important;
+  pointer-events: none;
+}
+
+.signupLink:hover {
+  color: #a678d1;
+}
+
+/* RIGHT PANEL */
+.rightPanel {
+  background: #fefbf7;
+  width: 52vw;
+  min-width: 320px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rightContent {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.welcomeHeading {
+  font-size: 48px;
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  color: #412234;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.brandHighlight {
+  color: #412234;
+  font-weight: 700;
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+.welcomeSubheading {
+  font-size: 20px;
+  color: #412234;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', 'Poppins', Arial, sans-serif;
+}
+
+.illustration {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .pageContainer {
+    flex-direction: column;
+  }
+  .leftPanel, .rightPanel {
+    width: 100vw;
+    min-width: 0;
+    height: auto;
+    min-height: 100vh;
+  }
+  .leftContent, .rightContent {
+    max-width: 100vw;
+    padding: 32px 8vw;
+  }
+  .welcomeHeading {
+    font-size: 32px;
+  }
+  .illustration {
+    max-width: 300px;
+  }
+  .logo {
+    width: 120px;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .loginHeading {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .leftPanel, .rightPanel {
+    width: 100vw;
+    min-width: 0;
+    height: auto;
+    min-height: 100vh;
+  }
+  .leftContent, .rightContent {
+    max-width: 100vw;
+    padding: 18px 2vw;
+  }
+  .input, .passwordWrapper {
+    max-width: 100vw;
+  }
+  .welcomeHeading {
+    font-size: 18px;
+  }
+  .illustration {
+    max-width: 120px;
+  }
+  .logo {
+    width: 80px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .loginHeading {
+    font-size: 16px;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background: rgba(0,0,0,0.35); */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalBox {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 40px 32px 32px 32px;
+  min-width: 320px;
+  max-width: 90vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalBox h2 {
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.5px;
+}
+
+.modalBox form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalBox input[type="text"],
+.modalBox input[type="email"],
+.modalBox input[type="password"] {
+  width: 100%;
+  max-width: 350px;
+  height: 44px;
+  padding: 0 14px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1.5px solid #d1c4e9;
+  font-size: 16px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #222;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(164,120,209,0.06);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.modalBox input[type="text"]:focus,
+.modalBox input[type="email"]:focus,
+.modalBox input[type="password"]:focus {
+  border: 1.5px solid #a678d1;
+  outline: none;
+  box-shadow: 0 2px 12px rgba(164,120,209,0.13);
+}
+
+.modalBox button[type="submit"] {
+  background: #a678d1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  width: 100%;
+  height: 48px;
+  margin-top: 6px;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(164,120,209,0.10);
+}
+
+.modalBox button[type="submit"]:hover {
+  background: #8d5bbf;
+}
+
+.modalClose {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #4A2343;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1;
+  padding: 0;
+  z-index: 10;
+}
+
+.modalOpen {
+  filter: blur(6px);
+  transition: filter 0.2s;
+} 

@@ -1,0 +1,40 @@
+.forgotLink {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  transition: text-decoration 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  opacity: 1;
+}
+.forgotLink:disabled {
+  background: none !important;
+  border: none !important;
+  color: #bbb !important;
+  opacity: 1 !important;
+  pointer-events: none;
+}
+
+.signupLink {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 14px;
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  opacity: 1;
+}
+.signupLink:disabled {
+  background: none !important;
+  border: none !important;
+  color: #bbb !important;
+  opacity: 1 !important;
+  pointer-events: none;
+}
